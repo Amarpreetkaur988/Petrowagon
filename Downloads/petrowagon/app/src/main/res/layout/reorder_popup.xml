@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/space20">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="@color/black"
+        android:fontFamily="@font/humans"
+        android:textSize="@dimen/text16"
+        android:layout_marginTop="@dimen/space10"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space5"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/space5"
+            >
+
+            <EditText
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:hint="Chandigarh"
+                android:drawablePadding="@dimen/space20"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/space5"
+                android:id="@+id/et_reorder_location"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/colorless"
+                android:textSize="@dimen/text18"
+                android:padding="@dimen/space3"
+                android:fontFamily="@font/humans"
+                />
+
+            <ImageView
+                android:background="@color/white"
+                android:padding="@dimen/space10"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_maps_and_location"
+                android:id="@+id/drop_icon_popup"
+                android:layout_centerVertical="true"
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule Date"
+        android:textColor="@color/black"
+        android:fontFamily="@font/humans"
+        android:textSize="@dimen/text16"
+        android:layout_marginTop="@dimen/space10"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space5"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/space5"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:hint="DD/MM/YY"
+                android:drawablePadding="@dimen/space20"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/space5"
+                android:id="@+id/et_reorder_date"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/colorless"
+                android:textSize="@dimen/text18"
+                android:focusable="false"
+                android:padding="@dimen/space3"
+                android:fontFamily="@font/humans"
+
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule Time"
+            android:textColor="@color/black"
+            android:fontFamily="@font/humans"
+            android:textSize="@dimen/text16"
+            android:layout_marginTop="@dimen/space10"/>
+        <TextView
+            android:layout_marginLeft="@dimen/space5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Optional)"
+            android:fontFamily="@font/humans"
+            android:textSize="@dimen/text12"
+            android:layout_marginTop="@dimen/space10"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space5"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/space5"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_time"
+                android:hint="09:30 AM"
+                android:drawablePadding="@dimen/space20"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/space5"
+                android:id="@+id/et_reorder_time"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/colorless"
+                android:textSize="@dimen/text18"
+                android:focusable="false"
+                android:padding="@dimen/space3"
+                android:fontFamily="@font/humans"
+
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space40"
+        android:id="@+id/btn_next_reorder"
+        android:textColor="@color/black"
+        android:text="Next"
+        android:textSize="@dimen/text16"
+        android:fontFamily="@font/humans"
+        android:background="@drawable/grey_corners"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space40"
+        android:layout_marginLeft="@dimen/space5"
+        android:layout_marginRight="@dimen/space5"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_marginBottom="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space40"
+        android:id="@+id/btn_cancel_reorder"
+        android:textColor="@color/black"
+        android:text="Cancel"
+        android:textSize="@dimen/text16"
+        android:fontFamily="@font/humans"
+        android:background="@drawable/grey_corners"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space15"
+        android:layout_marginLeft="@dimen/space5"
+        android:layout_marginRight="@dimen/space5"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/transactionDeatil_CV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/space5"
+    android:layout_marginTop="@dimen/space10"
+    android:layout_marginLeft="@dimen/space5"
+    android:layout_marginRight="@dimen/space5"
+    android:layout_marginBottom="@dimen/space5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space10"
+        android:paddingBottom="@dimen/space10"
+        android:paddingLeft="@dimen/space5"
+        android:paddingRight="@dimen/space5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_give_money"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space5"
+            android:id="@+id/img_give_money"/>
+
+        <LinearLayout
+            android:layout_toLeftOf="@id/ll_amount_my_payments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_give_money"
+            android:layout_marginLeft="@dimen/space20"
+            >
+
+            <TextView
+                android:id="@+id/serviceTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid For Order at PatroWagon Service"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14"
+                android:fontFamily="@font/humans"/>
+
+            <TextView
+                android:id="@+id/timeTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:20 am"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14"
+                android:fontFamily="@font/humans"
+                android:layout_marginTop="@dimen/space5"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_amount_my_payments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space5"
+            android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:fontFamily="@font/humans"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/priceTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6424"
+                android:fontFamily="@font/humans"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space16"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/space5"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

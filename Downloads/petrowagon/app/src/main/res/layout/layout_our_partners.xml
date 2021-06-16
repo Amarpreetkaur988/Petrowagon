@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/space5"
+   app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/space10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space10">
+
+    <ImageView
+        android:layout_width="@dimen/space100"
+        android:layout_height="@dimen/space100"
+        android:layout_centerInParent="true"
+        android:src="@drawable/hindustan_petroleum_logo"
+        android:id="@+id/img_our_partners"
+        />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

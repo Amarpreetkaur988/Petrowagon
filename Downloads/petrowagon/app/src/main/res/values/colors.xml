@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#020202</color>
+    <color name="colorAccent">#020202</color>
+    <color name="black">#020202</color>
+    <color name="magenta">#CA3956</color>
+    <color name="grey">#747474</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0863AA</color>
+    <color name="circle_grey">#C4C2C3</color>
+    <color name="lightgrey">#F2F2F2</color>
+    <color name="verylightgrey">#F5F4F4</color>
+    <color name="green">#0BA050</color>
+    <color name="lightgreen">#A0C298</color>
+    <color name="red">#D50000</color>
+    <color name="newgrey">#F0F0F0</color>
+    <color name="yellow">#FFCA26</color>
+    <color name="muchgrey">#C7C6C6</color>
+    <color name="verylightblue">#F9FFFF</color>
+    <color name="lightblue">#E4FEFF</color>
+    <color name="darkblue">#09B2B9</color>
+    <color name="view">#09B2B9</color>
+    <color name="green_circle">#039822</color>
+    <color name="green_selection">#D4DB2B</color>
+    <color name="greentext">#76A33D</color>
+    <color name="verylightgreen">#F5FFE6</color>
+    <color name="backgrey">#F5F5F5</color>
+    <color name="verydarkblue">#323B44</color>
+    <color name="opacity">#65323B44</color>
+    <color name="airportgreen">#B6D5A5</color>
+    <color name="lightred">#FF4D4D</color>
+    <color name="bluegradient">#124556</color>
+    <color name="lightpink">#F2DEDF</color>
+    <color name="darkpink">#9B5458</color>
+    <color name="textgrey">#999798</color>
+    <color name="orange">#FC9F2B</color>
+    <color name="drawerblue">#F2F6F9</color>
+    <color name="icon_red">#F04338</color>
+    <color name="textgreen">#679846</color>
+
+
+
+</resources>

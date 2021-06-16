@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MyPaymentsActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/topbar_my_payments"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/topbar_my_payments"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_my_payments"
+            android:layout_marginTop="@dimen/space10"/>
+
+
+    <TextView
+        android:layout_below="@+id/topbar_my_payments"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/humans"
+        android:textSize="@dimen/text16"
+        android:text="No Data Found"
+        android:layout_centerInParent="true"
+        android:id="@+id/transactionText"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

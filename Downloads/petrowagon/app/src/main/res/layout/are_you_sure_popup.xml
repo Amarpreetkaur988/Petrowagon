@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/space10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are You Sure?"
+            android:textColor="@color/black"
+            android:fontFamily="@font/humans"
+            android:textSize="@dimen/text22"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space20"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            android:layout_marginTop="@dimen/space25"
+            android:layout_marginBottom="@dimen/space20"
+            android:weightSum="2">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space45"
+                android:id="@+id/btnYesSure"
+                android:textColor="@color/black"
+                android:text="Yes"
+                android:textSize="@dimen/text16"
+                android:fontFamily="@font/humans"
+                android:background="@drawable/grey_corners"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space10"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space45"
+                android:id="@+id/btnNoSure"
+                android:textColor="@color/black"
+                android:text="No"
+                android:textSize="@dimen/text16"
+                android:fontFamily="@font/humans"
+                android:background="@drawable/grey_corners"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space10"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

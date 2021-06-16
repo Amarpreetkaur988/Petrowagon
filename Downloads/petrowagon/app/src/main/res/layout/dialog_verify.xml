@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/space10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/space100"
+        android:layout_height="@dimen/space100"
+        android:src="@drawable/thumbs"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations."
+        android:textColor="@color/black"
+        android:fontFamily="@font/humans"
+        android:textSize="@dimen/text20"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space20"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your profile has been \nsuccessfully verified."
+        android:textColor="@color/black"
+        android:fontFamily="@font/humans"
+        android:textSize="@dimen/text18"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space20"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space45"
+        android:id="@+id/btn_done_dialog_otp"
+        android:textColor="@color/white"
+        android:text="DONE"
+        android:textSize="@dimen/text16"
+        android:fontFamily="@font/humans"
+        android:background="@drawable/black_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space40"
+        android:layout_marginLeft="@dimen/space30"
+        android:layout_marginRight="@dimen/space30"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/space15"
+        android:gravity="center"
+        />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

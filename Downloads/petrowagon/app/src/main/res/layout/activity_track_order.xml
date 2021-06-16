@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TrackOrderActivity">
+
+    <include
+        android:id="@+id/topbar_track_order"
+        layout="@layout/topbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@id/topbar_track_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topbar_track_order"
+                android:layout_marginLeft="@dimen/space20"
+                android:layout_marginRight="@dimen/space20"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/space80"
+                    android:layout_height="@dimen/space80"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space20"
+                    android:src="@drawable/ic_gas_station" />
+
+                <TextView
+                    android:id="@+id/tv_pro_name_track"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/humans"
+                    android:text="Diesel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text22" />
+
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_locationTrack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableTop="@drawable/location_grey"
+                    android:drawablePadding="@dimen/space5"
+                    android:fontFamily="@font/humans"
+                    android:text="Chandigarh"
+                    android:textSize="@dimen/text18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space40"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/space0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/humans"
+                            android:text="Qty"
+                            android:textSize="@dimen/text16" />
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:id="@+id/tv_quantityTrack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/space10"
+                            android:fontFamily="@font/humans"
+                            android:text="100 litres"
+                            android:textSize="@dimen/text16" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space1"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginBottom="@dimen/space5"
+                        android:background="@color/newgrey" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/space0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/humans"
+                            android:text="Date"
+                            android:textSize="@dimen/text16" />
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:id="@+id/tv_dateTrack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/space10"
+                            android:fontFamily="@font/humans"
+                            android:text="dd/mm/yy"
+                            android:textSize="@dimen/text16" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space1"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginBottom="@dimen/space5"
+                        android:background="@color/newgrey" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/space0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/humans"
+                            android:text="Price/Litre"
+                            android:textSize="@dimen/text16" />
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:id="@+id/tv_pricePerLitreTrack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/space10"
+                            android:fontFamily="@font/humans"
+                            android:text="64.24 per litre"
+                            android:textSize="@dimen/text16" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space50">
+
+                    <TextView
+                        android:id="@+id/tv_track_track"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/humans"
+                        android:text="Track"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space70"
+                        android:layout_toRightOf="@id/tv_track_track"
+                        android:fontFamily="@font/humans"
+                        android:text="Order Details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text18" />
+
+                </RelativeLayout>
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/space30"-->
+    <!--                android:layout_marginBottom="@dimen/space20"-->
+    <!--                android:orientation="horizontal">-->
+
+
+    <!--                <RelativeLayout-->
+    <!--                    android:id="@+id/tracking_line"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginLeft="@dimen/space10">-->
+
+    <!--                    <RelativeLayout-->
+    <!--                        android:id="@+id/view_order_confirmed"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginTop="@dimen/space5">-->
+
+    <!--                        <ImageView-->
+    <!--                            android:id="@+id/view_orderConfirm"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_centerInParent="true"-->
+    <!--                            android:layout_marginTop="@dimen/space5"-->
+    <!--                            android:src="@drawable/ic_circular_shape_silhouette" />-->
+
+    <!--                    </RelativeLayout>-->
+
+    <!--                    <View-->
+    <!--                        android:id="@+id/v1"-->
+    <!--                        android:layout_width="@dimen/space2"-->
+    <!--                        android:layout_height="@dimen/space20"-->
+    <!--                        android:layout_below="@+id/view_order_confirmed"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:background="@color/circle_grey" />-->
+
+
+    <!--                    <ImageView-->
+    <!--                        android:id="@+id/view_fueling"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_below="@id/v1"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:src="@drawable/ic_circular_shape_silhouette" />-->
+
+    <!--                    <View-->
+    <!--                        android:id="@+id/v2"-->
+    <!--                        android:layout_width="@dimen/space2"-->
+    <!--                        android:layout_height="@dimen/space20"-->
+    <!--                        android:layout_below="@+id/view_fueling"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:background="@color/circle_grey" />-->
+
+
+    <!--                    <ImageView-->
+    <!--                        android:id="@+id/view_delivery_progress"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_below="@id/view_fueling"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:layout_marginTop="@dimen/space20"-->
+    <!--                        android:src="@drawable/ic_circular_shape_silhouette" />-->
+
+
+    <!--                    <ImageView-->
+    <!--                        android:id="@+id/view_delivered"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_below="@id/view_delivery_progress"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:layout_marginTop="@dimen/space20"-->
+    <!--                        android:src="@drawable/ic_circular_shape_silhouette" />-->
+
+    <!--                    <View-->
+    <!--                        android:id="@+id/v3"-->
+    <!--                        android:layout_width="@dimen/space2"-->
+    <!--                        android:layout_height="@dimen/space20"-->
+    <!--                        android:layout_below="@+id/view_delivery_progress"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:background="@color/circle_grey" />-->
+
+    <!--                </RelativeLayout>-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginLeft="@dimen/space70"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:fontFamily="@font/humans"-->
+    <!--                        android:text="Order Confirmed"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="@dimen/text16" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginTop="@dimen/space20"-->
+    <!--                        android:fontFamily="@font/humans"-->
+    <!--                        android:text="Fueling In Progress"-->
+    <!--                        android:textSize="@dimen/text16" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginTop="@dimen/space20"-->
+    <!--                        android:fontFamily="@font/humans"-->
+    <!--                        android:text="Delivery In Progress"-->
+    <!--                        android:textSize="@dimen/text16" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginTop="@dimen/space20"-->
+    <!--                        android:fontFamily="@font/humans"-->
+    <!--                        android:text="Delivered"-->
+    <!--                        android:textSize="@dimen/text16" />-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/space30">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/view_orderConfirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_circular_shape_silhouette" />
+
+                        <TextView
+                            android:id="@+id/confirm_text"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/space100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/humans"
+                            android:text="Order Confirmed"
+                            android:textSize="@dimen/text16" />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_marginLeft="@dimen/space11"
+                        android:id="@+id/v1"
+                        android:layout_width="@dimen/space2"
+                        android:layout_height="@dimen/space20"
+                        android:layout_below="@+id/view_delivery_progress"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/circle_grey" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/view_fueling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_circular_shape_silhouette" />
+
+                        <TextView
+                            android:id="@+id/fueling_text"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/space100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/humans"
+                            android:text="Fueling in Progress"
+                            android:textSize="@dimen/text16" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginLeft="@dimen/space11"
+                        android:id="@+id/v2"
+                        android:layout_width="@dimen/space2"
+                        android:layout_height="@dimen/space20"
+                        android:layout_below="@+id/view_delivery_progress"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/circle_grey" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/view_delivery_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_circular_shape_silhouette" />
+
+                        <TextView
+                            android:id="@+id/delivery_text"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/space100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/humans"
+                            android:text="Delivery in Progress"
+                            android:textSize="@dimen/text16" />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_marginLeft="@dimen/space11"
+                        android:id="@+id/v3"
+                        android:layout_width="@dimen/space2"
+                        android:layout_height="@dimen/space20"
+                        android:layout_below="@+id/view_delivery_progress"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/circle_grey" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/view_delivered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_circular_shape_silhouette" />
+
+                        <TextView
+                            android:id="@+id/delivered_text"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/space100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/humans"
+                            android:text="Delivered"
+                            android:textSize="@dimen/text16" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <Button
+                    android:layout_marginRight="@dimen/space15"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:visibility="visible"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space50"
+                    android:id="@+id/BtnCAncelOrder"
+                    android:textColor="@color/black"
+                    android:text="Cancel Order"
+                    android:textSize="@dimen/text16"
+                    android:fontFamily="@font/humans"
+                    android:background="@drawable/grey_corners"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space10"
+                    android:layout_marginBottom="@dimen/space10"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    <TextView
+        android:layout_below="@+id/topbar_track_order"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/humans"
+        android:textSize="@dimen/text16"
+        android:text="No Data Found"
+        android:layout_centerInParent="true"
+        android:id="@+id/trackOrderText"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

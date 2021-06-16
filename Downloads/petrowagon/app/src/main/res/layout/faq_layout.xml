@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space10">
+
+    <TextView
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginTop="@dimen/space15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faqQues"
+        android:textSize="@dimen/text18"
+        android:textColor="@color/black"
+        android:fontFamily="@font/humans"
+        android:text="Ques"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/space20"
+        android:padding="@dimen/space10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faqAns"
+        android:textSize="@dimen/text16"
+        android:textColor="@color/black"
+        android:fontFamily="@font/humans"
+        android:text="Ques"/>
+
+
+
+</LinearLayout>

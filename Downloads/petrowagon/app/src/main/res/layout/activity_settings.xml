@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SettingsActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/topbar_settings"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar_settings"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/topbar_settings"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/space5"
+        android:layout_margin="@dimen/space10"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space10"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Notifications"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:fontFamily="@font/humans"/>
+
+                <Switch
+                    android:id="@+id/pushNotification"
+                    android:padding="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/push_notification"
+                    android:fontFamily="@font/humans"
+                    android:textSize="@dimen/text16"
+                    android:textColor="@color/grey"/>
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/space2"-->
+<!--                android:background="@color/lightgrey"-->
+<!--                android:layout_marginTop="@dimen/space8"/>-->
+<!--            <Switch-->
+<!--                android:padding="@dimen/space10"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="@string/sms_message"-->
+<!--                android:fontFamily="@font/humans"-->
+<!--                android:textSize="@dimen/text16"-->
+<!--                android:textColor="@color/grey"/>-->
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/space5"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_marginBottom="@dimen/space10"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space10"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Notifications"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16"
+                    android:fontFamily="@font/humans"/>
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/humans"-->
+<!--                    android:text="No email address currently configured"-->
+<!--                    android:layout_centerVertical="true"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/space10">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/humans"-->
+<!--                        android:text="Product Emails"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:id="@+id/tv_product_emails"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/humans"-->
+<!--                        android:text="(new messages,bookings etc)"-->
+<!--                        android:layout_below="@id/tv_product_emails"-->
+<!--                        android:layout_marginTop="@dimen/space10"-->
+<!--                       />-->
+
+<!--                    <Switch-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        />-->
+                    <Switch
+                        android:id="@+id/productEmail"
+                        android:padding="@dimen/space10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/product_email"
+                        android:fontFamily="@font/humans"
+                        android:textSize="@dimen/text16"
+                        android:textColor="@color/grey"/>
+
+<!--                </RelativeLayout>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space2"
+                    android:background="@color/lightgrey"
+                    android:layout_marginTop="@dimen/space13"/>
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/space10">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/humans"-->
+<!--                        android:text="Marketing Emails"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:id="@+id/tv_marketing_emails"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/humans"-->
+<!--                        android:text="(newsletters,promos etc)"-->
+<!--                        android:layout_below="@id/tv_marketing_emails"-->
+<!--                        android:layout_marginTop="@dimen/space10"-->
+<!--                        />-->
+
+<!--                    <Switch-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        />-->
+
+<!--                </RelativeLayout>-->
+
+                <Switch
+                    android:id="@+id/marketingEmail"
+                    android:padding="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/marketing_emails"
+                    android:fontFamily="@font/humans"
+                    android:textSize="@dimen/text16"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ChangePassword_Cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/space5"
+            android:layout_margin="@dimen/space10"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space10"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16"
+                    android:fontFamily="@font/humans"/>
+                <TextView
+                    android:id="@+id/ChangePassword_Tv"
+                    android:paddingLeft="@dimen/space10"
+                    android:layout_marginTop="@dimen/space4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:fontFamily="@font/humans"
+                    android:textSize="@dimen/text18"
+                    />
+
+
+
+
+                <!--            <View-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="@dimen/space2"-->
+                <!--                android:background="@color/lightgrey"-->
+                <!--                android:layout_marginTop="@dimen/space8"/>-->
+                <!--            <Switch-->
+                <!--                android:padding="@dimen/space10"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:text="@string/sms_message"-->
+                <!--                android:fontFamily="@font/humans"-->
+                <!--                android:textSize="@dimen/text16"-->
+                <!--                android:textColor="@color/grey"/>-->
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.PickupLocationActivity">
+
+
+    <LinearLayout
+        android:elevation="@dimen/space10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:layout_marginTop="@dimen/space10"
+        android:background="@color/white">
+        <!--        <fragment-->
+        <!--            android:id="@+id/autocomplete_fragment"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/space50"-->
+        <!--            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"-->
+        <!--            />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space15"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:fontFamily="@font/humans"
+            android:textColor="@color/black"
+            android:hint="Location"
+            android:textSize="@dimen/text16"
+            android:ellipsize="end"
+            android:id="@+id/address_Et" />
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/picupLocationMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_pin"
+        android:layout_centerInParent="true"
+        android:id="@+id/pin"
+        android:translationY="-18dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_pin"
+        android:layout_centerInParent="true"
+        android:translationY="-18dp" />
+
+
+    <RelativeLayout
+        android:padding="@dimen/space10"
+        android:layout_width="@dimen/space40"
+        android:layout_height="@dimen/space40"
+        android:layout_above="@id/BtnOkLocation"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space20"
+        android:background="@drawable/current_bg"
+        android:elevation="@dimen/space10"
+        android:clickable="true"
+        android:id="@+id/currenLocationBtn"
+        >
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            android:src="@drawable/ic_maps_and_location" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_marginRight="@dimen/space20"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space50"
+        android:id="@+id/BtnOkLocation"
+        android:textColor="@color/white"
+        android:text="OK"
+        android:textSize="@dimen/text16"
+        android:fontFamily="@font/humans"
+        android:background="@drawable/black_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space30"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space15"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

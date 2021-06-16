@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:id="@+id/ll_main_past_orders"
+        android:padding="@dimen/space10"
+        >
+
+        <ImageView
+            android:id="@+id/station"
+            android:layout_width="@dimen/space30"
+            android:layout_height="@dimen/space30"
+            android:src="@drawable/ic_gas_station"
+            />
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/reorderLay"
+            android:layout_toRightOf="@+id/station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_marginLeft="@dimen/space10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/productTitlePastOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="Diesel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"/>
+
+                <TextView
+                    android:id="@+id/productQuantityPastOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="(100 litres)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:layout_marginLeft="@dimen/space5"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space5">
+
+                <TextView
+                    android:id="@+id/productAddressPastOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="Chandigarh,"
+                    android:textSize="@dimen/text14"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space5">
+
+                <TextView
+                    android:id="@+id/productDatePastOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="October 2,2019"
+                    android:textSize="@dimen/text14"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="Rs "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16"/>
+
+                <TextView
+                    android:id="@+id/productPricePastOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="6424"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16"
+                    android:layout_marginLeft="@dimen/space2"/>
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/space10"-->
+<!--                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/reorderLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+
+            <Button
+                android:id="@+id/productReOrderPastOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space30"
+                android:text="Reorder"
+                android:textAllCaps="false"
+                android:background="@drawable/grey_corners"
+                android:textSize="@dimen/text14"
+                android:layout_marginRight="@dimen/space5"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space2"
+        android:layout_below="@id/ll_main_past_orders"
+        android:layout_marginTop="@dimen/space5"
+        android:background="@color/lightgrey"
+        />
+
+
+</RelativeLayout>

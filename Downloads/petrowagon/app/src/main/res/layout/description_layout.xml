@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space15">
+
+    <TextView
+
+        android:id="@+id/productTitleDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/humans"
+        android:text="High Speed Diesel"
+        android:textSize="@dimen/text18"
+        />
+
+    <TextView
+        android:id="@+id/productDescriptionDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem_ipsum_full"
+        android:textSize="@dimen/text14"
+        android:layout_marginTop="@dimen/space10"
+        />
+
+</LinearLayout>

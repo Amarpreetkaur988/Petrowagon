@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UserPaymentActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/topbar_payment"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar_payment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space30"
+        android:layout_below="@id/topbar_payment"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_credit_card"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:id="@+id/img_card_payment"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use Debit/Credit Card"
+                android:textColor="@color/black"
+                android:fontFamily="@font/humans"
+                android:drawableLeft="@drawable/ic_credit_card"
+                android:textSize="@dimen/text18"
+                android:drawablePadding="@dimen/space15"
+                android:layout_centerVertical="true"/>
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_black_check_box_with_white_check"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                />-->
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:padding="@dimen/space10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_bg"
+            android:layout_marginTop="@dimen/space20">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space50"
+                android:id="@+id/cardNumberPayment"
+                android:fontFamily="@font/humans"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:hint="Enter your card number"
+                android:background="@drawable/white_bg"
+                android:textSize="@dimen/text18"
+                android:maxLength="16"
+                android:padding="@dimen/space8"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/cardNumberPayment"
+                android:layout_marginTop="@dimen/space20"
+
+                >
+
+                <EditText
+                    android:layout_width="@dimen/space60"
+                    android:layout_height="@dimen/space40"
+                    android:background="@drawable/white_bg"
+                    android:hint="MM"
+                    android:focusable="false"
+                    android:id="@+id/cardMonthPayment"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space18"
+                    android:padding="@dimen/space5"
+                    android:maxLength="2"
+                    android:layout_alignParentLeft="true"
+                    android:inputType="number"
+                    android:textAlignment="center"
+
+                    />
+
+                <EditText
+                    android:layout_width="@dimen/space60"
+                    android:layout_height="@dimen/space40"
+                    android:background="@drawable/white_bg"
+                    android:hint="YY"
+                    android:focusable="false"
+                    android:id="@+id/cardYearPayment"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space18"
+                    android:padding="@dimen/space5"
+                    android:maxLength="4"
+                   android:layout_toRightOf="@id/cardMonthPayment"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:textAlignment="center"
+
+                    />
+
+
+
+                <EditText
+                    android:layout_width="@dimen/space80"
+                    android:layout_height="@dimen/space40"
+                    android:background="@drawable/white_bg"
+                    android:hint="CVV"
+                    android:id="@+id/cardCVVPayment"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space18"
+                    android:padding="@dimen/space5"
+                    android:maxLength="3"
+                    android:layout_alignParentRight="true"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/humans"
+            android:text="This card will be securely saved for a faster experience.CVV number will not be saved."
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space10"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space50"
+            android:id="@+id/btn_next_payment"
+            android:textColor="@color/black"
+            android:text="NEXT"
+            android:textSize="@dimen/text16"
+            android:fontFamily="@font/humans"
+            android:background="@drawable/grey_corners"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space40"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/space10"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

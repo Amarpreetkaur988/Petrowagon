@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OrderDetailsActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/topbar_order_details"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar_order_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_below="@id/topbar_order_details">
+
+        <ImageView
+            android:layout_width="@dimen/space80"
+            android:layout_height="@dimen/space80"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space20"
+            android:src="@drawable/ic_gas_station"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diesel"
+            android:textColor="@color/black"
+            android:fontFamily="@font/humans"
+            android:textSize="@dimen/text22"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/productNameOrderDetail"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chandigarh"
+            android:drawableTop="@drawable/location_grey"
+            android:drawablePadding="@dimen/space5"
+            android:fontFamily="@font/humans"
+            android:textSize="@dimen/text18"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/locationOrderDetail"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/space40">
+
+            <LinearLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty"
+                    android:fontFamily="@font/humans"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text16"/>
+
+                <TextView
+                    android:id="@+id/quantityOrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space10"
+                    android:fontFamily="@font/humans"
+                    android:text="--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/space1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space5"
+                android:layout_marginBottom="@dimen/space5"
+                android:background="@color/newgrey"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:fontFamily="@font/humans"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yy/mm/dd"
+                    android:fontFamily="@font/humans"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text16"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/space10"
+                    android:id="@+id/DropOrderDateOrderDetail"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/space1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space5"
+                android:layout_marginBottom="@dimen/space5"
+                android:background="@color/newgrey"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:fontFamily="@font/humans"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text16"/>
+
+                <TextView
+                    android:id="@+id/perLitrePriceOrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-- / litre"
+                    android:fontFamily="@font/humans"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text16"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/space10"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:textColor="@color/black"
+            android:fontFamily="@font/humans"
+            android:textSize="@dimen/text18"
+            android:layout_marginTop="@dimen/space50"/>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Diesel Quantity"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:fontFamily="@font/humans"-->
+<!--                android:layout_marginTop="@dimen/space10"-->
+<!--                android:textSize="@dimen/text16"-->
+<!--                android:id="@+id/tv_pro_name_detail_place_order"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="100 litres"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:fontFamily="@font/humans"-->
+<!--                android:layout_marginTop="@dimen/space10"-->
+<!--                android:textSize="@dimen/text16"-->
+<!--                android:id="@+id/tv_pro_detail_quantity_place_order"/>-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Price per litre"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:fontFamily="@font/humans"-->
+<!--                android:layout_marginTop="@dimen/space10"-->
+<!--                android:textSize="@dimen/text16"-->
+<!--                android:id="@+id/tv_pro_price_detail_place_order"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="100 litres"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:fontFamily="@font/humans"-->
+<!--                android:layout_marginTop="@dimen/space10"-->
+<!--                android:textSize="@dimen/text16"-->
+<!--                android:id="@+id/tv_pro_price_place_order"/>-->
+
+
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:fontFamily="@font/humans"
+                android:layout_marginTop="@dimen/space10"
+                android:textSize="@dimen/text16"
+                android:id="@+id/tv_pro_total_price_place_order"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:fontFamily="@font/humans"
+                android:layout_marginTop="@dimen/space10"
+                android:textSize="@dimen/text16"
+                android:id="@+id/totalPriceOderDetail"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space50"
+            android:id="@+id/btn_proceed_to_payment"
+            android:textColor="@color/black"
+            android:text="PROCEED TO PAYMENT"
+            android:textSize="@dimen/text16"
+            android:fontFamily="@font/humans"
+            android:background="@drawable/grey_corners"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space50"
+            android:layout_marginBottom="@dimen/space10"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

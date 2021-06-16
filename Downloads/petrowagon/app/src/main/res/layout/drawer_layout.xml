@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/space250"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="start">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space30">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/space100"
+                        android:layout_height="@dimen/space100"
+                        android:src="@drawable/dummy_img"
+                        android:id="@+id/userImg"
+                        android:layout_gravity="center_horizontal" />
+
+                    <ProgressBar
+                        android:layout_width="@dimen/space80"
+                        android:layout_height="@dimen/space80"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/drawerProgress" />
+
+                </RelativeLayout>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18"
+                    android:id="@+id/UserName"
+                    android:text="Omninos Solutions"
+                    android:layout_marginTop="@dimen/space10"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_marginLeft="@dimen/space10"
+                android:padding="@dimen/space5">
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_man_user"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_profile"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Orders"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_gas_station"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_my_orders"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space10" />
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transactions"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_credit_cards_payment"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_my_payments"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space10" />
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Track Latest Order"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_maps_and_location"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_track_orders"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space10" />
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelled Orders"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_rejected"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_reject_orders"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space10" />
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_settings"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_settings"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space10" />
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FAQ/Help"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_question"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_faq_help"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space10" />
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our Partners"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_partner"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_our_partners"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space10" />
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_info"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_about_us"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space10" />
+
+                <TextView
+                    android:padding="@dimen/space8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:fontFamily="@font/humans"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:drawablePadding="@dimen/space20"
+                    android:id="@+id/drawer_logout"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space10" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.google.android.material.navigation.NavigationView>

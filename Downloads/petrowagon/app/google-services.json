@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "826305049670",
+    "firebase_url": "https://petrowagon.firebaseio.com",
+    "project_id": "petrowagon",
+    "storage_bucket": "petrowagon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826305049670:android:36c4e6979288bbbedb4647",
+        "android_client_info": {
+          "package_name": "com.example.petrowagon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826305049670-4b3hr3k3pn3d2hobn2dmkrkbu8t8ep2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petrowagon",
+            "certificate_hash": "3801538f49074de478fa698a9d66b57fd7834c9e"
+          }
+        },
+        {
+          "client_id": "826305049670-5n7fgl8l2hmff9nf3j47gpj2eha8qqv8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petrowagon",
+            "certificate_hash": "5aaaecc4502ebb74fd1cf33b40453185f167fdaa"
+          }
+        },
+        {
+          "client_id": "826305049670-kk3trju25lcktavasqaonpvfv6kp6unv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaAEWydMLaDBoEeFnjj_5XXS1OX1MovAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826305049670-kk3trju25lcktavasqaonpvfv6kp6unv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826305049670:android:db92ddb58dc2f45bdb4647",
+        "android_client_info": {
+          "package_name": "com.omninos.petrowagon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826305049670-294jdrhj27geb8f3ga9mgngggcb8alpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.omninos.petrowagon",
+            "certificate_hash": "3801538f49074de478fa698a9d66b57fd7834c9e"
+          }
+        },
+        {
+          "client_id": "826305049670-kk3trju25lcktavasqaonpvfv6kp6unv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaAEWydMLaDBoEeFnjj_5XXS1OX1MovAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826305049670-kk3trju25lcktavasqaonpvfv6kp6unv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

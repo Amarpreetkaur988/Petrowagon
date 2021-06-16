@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PaymentMethodActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/topbar_payment_method"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar_payment_method">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:layout_marginTop="@dimen/space30"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_below="@id/topbar_payment_method">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Payment Method"
+            android:textColor="@color/black"
+            android:fontFamily="@font/humans"
+            android:textSize="@dimen/text18"
+            android:layout_gravity="center"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RadioButton
+                    android:padding="@dimen/space10"
+                    android:id="@+id/cashOnDelivery"
+                    android:layout_marginTop="@dimen/text20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text16"
+                    android:text="Cash on Delivery"/>
+                <RadioButton
+                    android:padding="@dimen/space10"
+                    android:id="@+id/debitCreditCard"
+                    android:layout_marginTop="@dimen/text20"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/text16"
+                    android:layout_height="wrap_content"
+                    android:text="UPI/Credit/Debit Card/Net Banking"/>
+<!--                <RadioButton-->
+<!--                    android:padding="@dimen/space10"-->
+<!--                    android:id="@+id/paytm"-->
+<!--                    android:textSize="@dimen/text16"-->
+<!--                    android:layout_marginTop="@dimen/text20"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Paytm"/>-->
+
+
+
+            </RadioGroup>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space50"
+            android:id="@+id/btn_next_payment_method"
+            android:textColor="@color/black"
+            android:text="NEXT"
+            android:textSize="@dimen/text16"
+            android:fontFamily="@font/humans"
+            android:background="@drawable/grey_corners"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space40"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

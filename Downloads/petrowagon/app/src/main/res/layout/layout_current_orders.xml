@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/space10"
+        android:id="@+id/ll_main_current_orders"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/space30"
+            android:layout_height="@dimen/space30"
+            android:src="@drawable/ic_gas_station"
+            android:id="@+id/pump"
+            />
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/productTrackOrderCurrentOrder"
+            android:layout_toRightOf="@id/pump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/productTitleCurrentOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="Diesel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"/>
+
+                <TextView
+                    android:id="@+id/productQuantityCurrentOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="(100 litres)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:layout_marginLeft="@dimen/space5"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/space10"
+                android:layout_marginTop="@dimen/space5">
+
+                <TextView
+                    android:id="@+id/productAddressCurrentOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="Chandigarh,"
+                    android:textSize="@dimen/text14"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space5">
+
+
+                <TextView
+                    android:id="@+id/productDateCurrentOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="October 2,2019"
+                    android:textSize="@dimen/text14" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="Rs "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16"/>
+
+                <TextView
+                    android:id="@+id/productPriceCurrentOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/humans"
+                    android:text="6424"
+                    android:textSize="@dimen/text16"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/space2"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/productTrackOrderCurrentOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space5"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_maps_and_location"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track Your \nOrder"
+                android:fontFamily="@font/humans"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space2"
+        android:layout_below="@id/ll_main_current_orders"
+        android:layout_marginTop="@dimen/space5"
+        android:background="@color/lightgrey"
+        />
+
+</RelativeLayout>
